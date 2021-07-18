@@ -13,8 +13,3 @@ if %c% == 0 (
     echo %y%
 )
 goto LOOP
-
-
-echo %b%
-echo %x%
-echo %y% 
