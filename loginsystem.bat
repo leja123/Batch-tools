@@ -1,7 +1,13 @@
 
 @echo off
+color 03
 :login
-echo LOG IN
+echo ************************
+echo *                      *
+echo *        LOG IN        *
+echo *                      *
+echo ************************
+echo.
 echo Enter username and password.
 echo.
 set /p "username=Username: "
@@ -31,7 +37,6 @@ if "%password%"=="minecraft" (
 )
 
 
-
 :wrongpassword
 echo Wrong password!
 echo Press b to go back and try again
@@ -39,7 +44,7 @@ set /p back=""
 if %back%==b (
     goto login
 ) else (
-    goto exit
+    goto exitprogram
 )
 
 
@@ -47,7 +52,7 @@ if %back%==b (
 echo Succesfully logged in!
 pause
 
-:exit
-pause
+:exitprogram
+exit
 
 
